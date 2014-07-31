@@ -2,7 +2,8 @@ FROM debian:stable
 MAINTAINER Thiago Avelino <thiago@avelino.xxx>
 
 # upgrade distro
-RUN aptitude update
+RUN apt-get update
+RUN apt-get install -y aptitude
 RUN aptitude upgrade -y
 RUN aptitude install -y postfix openssh-server supervisor 
 
