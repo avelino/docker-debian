@@ -1,4 +1,4 @@
-FROM debian:stable  
+FROM debian:wheezy 
 MAINTAINER Thiago Avelino <thiago@avelino.xxx>
 
 # upgrade distro
